@@ -1,0 +1,16 @@
+Python provides inbuilt functions for creating, writing and reading files. 
+There are two types of files that can be handled in python, normal text files and binary files (written in binary language, 0s and 1s).
+
+Text files: In this type of file, Each line of text is terminated with a special character called EOL (End of Line), which is the new line character (‘\n’) in python by default.
+Binary files: In this type of file, there is no terminator for a line and the data is stored after converting it into machine-understandable binary language.
+
+Access mode
+Access modes govern the type of operations possible in the opened file. 
+It refers to how the file will be used once it’s opened. 
+These modes also define the location of the File Handle in the file. 
+File handle is like a cursor, which defines from where the data has to be read or written in the file. 
+Different access modes for reading a file are –
+
+1. Write Only (‘w’) : Open the file for writing. For an existing file, the data is truncated and over-written. The handle is positioned at the beginning of the file. Creates the file if the file does not exist.
+2. Write and Read (‘w+’) : Open the file for reading and writing. For an existing file, data is truncated and over-written. The handle is positioned at the beginning of the file.
+3. Append Only (‘a’) : Open the file for writing. The file is created if it does not exist. The handle is positioned at the end of the file. The data being written will be inserted at the end, after the existing data.
